@@ -17,6 +17,7 @@ const config: Config = {
       button: "#6259ea",
       footerText: "#fbfbff",
       footerBackground: "#1a1930",
+      buttonBackground: "#ffffff91",
     },
     extend: {
       backgroundImage: {
