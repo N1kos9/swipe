@@ -9,9 +9,14 @@ const config: Config = {
   theme: {
     colors: {
       background: "#fbfbff",
-      pink: "#e7e5ff",
+      pinkBackground: "#e7e5ff",
+      magentaBackground: "#e7e5ff",
       text: "#2d2b5c",
       title: "#1a1930",
+      subtitle: "#1a1930",
+      button: "#6259ea",
+      footerText: "#fbfbff",
+      footerBackground: "#1a1930",
     },
     extend: {
       backgroundImage: {
