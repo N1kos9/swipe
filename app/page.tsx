@@ -33,7 +33,7 @@ export default function Home() {
         </div>
         <div>
           <button className="p-4 bg-buttonBackground opacity-80 px-9 rounded-md border-2 border-background">
-            Buy now
+            Buy noww
           </button>
         </div>
         <div className="absolute -z-20 justify-center h-full align-middle bottom-0 right-60">
