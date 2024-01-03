@@ -9,7 +9,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 export default function Home() {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenWidth, setScreenWidth] = useState(1);
 
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
