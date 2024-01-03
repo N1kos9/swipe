@@ -21,10 +21,14 @@ export default function Home() {
         setScreenWidth(window.innerWidth);
       }
     };
-    window.addEventListener("resize", changeWidth);
+    if (window !== undefined) {
+      window.addEventListener("resize", changeWidth);
+    }
 
     return () => {
-      window.removeEventListener("resize", changeWidth);
+      if (window !== undefined) {
+        window.removeEventListener("resize", changeWidth);
+      }
     };
   }, []);
   return (
