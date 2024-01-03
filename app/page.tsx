@@ -65,7 +65,7 @@ export default function Home() {
             Buy now
           </button>
         </div>
-        <div className="absolute -z-20 h-full bottom-0 lg:right-40 right-[-300px] max-w-2xl max-h-2xl lg:max-w-full lg:max-h-full	">
+        <div className="absolute -z-20 h-full bottom-0 lg:right-56 right-[-300px] max-w-2xl max-h-2xl lg:max-w-full lg:max-h-full	">
           <Image
             src="/item.png"
             alt="item"
@@ -75,11 +75,15 @@ export default function Home() {
           />
         </div>
       </nav>
-      <div>
-        <h1>Accessible way to start your business</h1>
-        <h2>Simple. Customizable. Stylish.</h2>
-        <button>Get demo for free</button>
-        <h3>WATCH FULL VIDEO</h3>
+      <div className=" mt-28">
+        <h1 className="text-7xl text-balance font-bold tracking-wider leading-tight">
+          Accessible way to start your business
+        </h1>
+        <h2 className="text-3xl">Simple. Customizable. Stylish.</h2>
+        <button className="p-4 bg-button px-9 rounded-md text-footerText font-medium">
+          Get demo for free
+        </button>
+        <h3 className="text-xl">WATCH FULL VIDEO</h3>
       </div>
     </main>
   );
