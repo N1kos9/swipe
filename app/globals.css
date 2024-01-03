@@ -10,7 +10,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   background: #fbfbff;
-  overflow-x: hidden;
+  overflow-y: hidden;
+  overflow: hidden;
 }
 @media (max-width: 1100px) {
   .navbar {
