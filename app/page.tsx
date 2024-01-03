@@ -2,8 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+
+import { FiInstagram } from "react-icons/fi";
+import { FiTwitter } from "react-icons/fi";
+import { FiFacebook } from "react-icons/fi";
+
 import { useState, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 
@@ -43,19 +46,19 @@ export default function Home() {
             <Link href="/" className="">
               About
             </Link>
-            <Link href="/" className="hover:text-pink-300">
+            <Link href="/" className="hover:text-hovering duration-300">
               Features
             </Link>
-            <Link href="/" className="hover:text-pink-300">
+            <Link href="/" className=" hover:text-hovering duration-300">
               Pricing
             </Link>
-            <Link href="/" className="text-pink-400">
+            <Link href="/" className=" hover:text-hovering duration-300">
               FAQ
             </Link>
-            <Link href="/" className="hover:text-pink-300">
+            <Link href="/" className="hover:text-hovering duration-300">
               Team
             </Link>
-            <Link href="/" className="hover:text-pink-300">
+            <Link href="/" className="hover:text-hovering duration-300">
               Contact
             </Link>
           </div>
@@ -93,9 +96,16 @@ export default function Home() {
         <button className="p-4 bg-button px-9 rounded-md text-footerText mt-16 font-bold hover:bg-hovering duration-500">
           Get demo for free
         </button>
-        <h3 className="md:text-xl text-lg md:mt-40 mt-20 font-bold">
-          &#128308; WATCH FULL VIDEO
-        </h3>
+        <div className="grid grid-cols-2 mt-20">
+          <h3 className="md:text-xl text-lg font-bold md:mt-24 mt-12 cursor-pointer">
+            &#128308; WATCH FULL VIDEO
+          </h3>
+          <div className=" flex flex-col items-end ">
+            <FiFacebook className="p-3 text-5xl cursor-pointer hover:text-hovering duration-300" />
+            <FiInstagram className="p-3 text-5xl cursor-pointer hover:text-hovering duration-300" />
+            <FiTwitter className="p-3 text-5xl cursor-pointer hover:text-hovering duration-300" />
+          </div>
+        </div>
       </div>
     </main>
   );
