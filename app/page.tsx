@@ -87,7 +87,7 @@ export default function Home() {
       </nav>
 
       <div className=" mt-28">
-        <h1 className="md:text-7xl text-5xl text-balance font-bold tracking-wider leading-tight">
+        <h1 className="md:text-7xl text-5xl text-balance font-bold md:tracking-wider md:leading-tight">
           Accessible way to start your business
         </h1>
         <h2 className="md:text-3xl text-2xl mt-11 font-bold text-text">
@@ -96,11 +96,11 @@ export default function Home() {
         <button className="p-4 bg-button px-9 rounded-md text-footerText mt-16 font-bold hover:bg-hovering duration-500">
           Get demo for free
         </button>
-        <div className="grid grid-cols-2 mt-20">
+        <div className="grid md:grid-cols-2 grid-cols-1 mt-20">
           <h3 className="md:text-xl text-lg font-bold md:mt-24 mt-12 cursor-pointer">
             &#128308; WATCH FULL VIDEO
           </h3>
-          <div className=" flex flex-col items-end ">
+          <div className=" flex md:flex-col items-end mt-2">
             <FiFacebook className="p-3 text-5xl cursor-pointer hover:text-hovering duration-300" />
             <FiInstagram className="p-3 text-5xl cursor-pointer hover:text-hovering duration-300" />
             <FiTwitter className="p-3 text-5xl cursor-pointer hover:text-hovering duration-300" />
