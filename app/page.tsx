@@ -32,8 +32,8 @@ export default function Home() {
         <div>
           <Image src="/logo.png" width={100} height={100} alt="logo" />
         </div>
-        {(toggleMenu || screenWidth > 1000) && (
-          <div className="">
+        {(toggleMenu || screenWidth > 1100) && (
+          <div className="navbar">
             <Link href="/" className="">
               About
             </Link>
@@ -54,18 +54,33 @@ export default function Home() {
             </Link>
           </div>
         )}
-        <div className="menu-icon">
-          <AiOutlineMenu onClick={toggleNav} />
+        <div className="menu-icon flex navbar:hidden">
+          <AiOutlineMenu
+            onClick={toggleNav}
+            className=" text-6xl border rounded-md p-3 bg-buttonBackground border-background shadow-2xl"
+          />
         </div>
         <div>
-          <button className="p-4 bg-buttonBackground opacity-80 px-9 rounded-md border-2 border-background">
+          <button className="md:p-4 hidden md:block md:bg-buttonBackground md:opacity-80 md:px-9 md:rounded-md md:border-2 md:border-background">
             Buy now
           </button>
         </div>
-        <div className="absolute -z-20 h-full bottom-0 lg:right-40 right-[-300px] max-w-2xl max-h-2xl lg:max-w-full 	">
-          <Image src="/item.png" alt="item" height={800} width={800} />
+        <div className="absolute -z-20 h-full bottom-0 lg:right-40 right-[-300px] max-w-2xl max-h-2xl lg:max-w-full lg:max-h-full	">
+          <Image
+            src="/item.png"
+            alt="item"
+            height={800}
+            width={800}
+            className=""
+          />
         </div>
       </nav>
+      <div>
+        <h1>Accessible way to start your business</h1>
+        <h2>Simple. Customizable. Stylish.</h2>
+        <button>Get demo for free</button>
+        <h3>WATCH FULL VIDEO</h3>
+      </div>
     </main>
   );
 }

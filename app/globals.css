@@ -10,4 +10,29 @@ body {
   padding: 0;
   box-sizing: border-box;
   background: #fbfbff;
+  overflow-x: hidden;
+}
+@media (max-width: 1100px) {
+  .navbar {
+    position: fixed;
+    top: 30%;
+    right: 50%;
+    left: 50%;
+    margin-top: 15rem;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 40px;
+    background-color: rgba(0, 5, 3, 0.575);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.42s;
+  }
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+    transition: all 0.42s;
+    color: white;
+  }
 }
