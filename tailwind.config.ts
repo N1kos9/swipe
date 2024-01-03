@@ -18,6 +18,8 @@ const config: Config = {
       footerText: "#fbfbff",
       footerBackground: "#1a1930",
       buttonBackground: "#ffffff91",
+      hovering: "#9925be",
+      whiteHover: "#ffffffc6",
     },
     extend: {
       backgroundImage: {

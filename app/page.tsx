@@ -54,14 +54,9 @@ export default function Home() {
             </Link>
           </div>
         )}
-        <div className="menu-icon flex navbar:hidden">
-          <AiOutlineMenu
-            onClick={toggleNav}
-            className=" text-6xl border rounded-md p-3 bg-buttonBackground border-background shadow-2xl"
-          />
-        </div>
+
         <div>
-          <button className="md:p-4 hidden md:block md:bg-buttonBackground md:opacity-80 md:px-9 md:rounded-md md:border-2 md:border-background">
+          <button className="md:p-4 hidden md:block md:bg-buttonBackground md:opacity-80 md:px-9 md:rounded-md md:border-2 md:border-background hover:bg-whiteHover duration-300 drop-shadow-2xl">
             Buy now
           </button>
         </div>
@@ -74,16 +69,27 @@ export default function Home() {
             className=""
           />
         </div>
+        <div className="menu-icon flex navbar:hidden">
+          <AiOutlineMenu
+            onClick={toggleNav}
+            className=" text-6xl border rounded-md p-3 bg-buttonBackground border-background shadow-2xl"
+          />
+        </div>
       </nav>
+
       <div className=" mt-28">
-        <h1 className="text-7xl text-balance font-bold tracking-wider leading-tight">
+        <h1 className="md:text-7xl text-5xl text-balance font-bold tracking-wider leading-tight">
           Accessible way to start your business
         </h1>
-        <h2 className="text-3xl">Simple. Customizable. Stylish.</h2>
-        <button className="p-4 bg-button px-9 rounded-md text-footerText font-medium">
+        <h2 className="md:text-3xl text-2xl mt-11 font-bold text-text">
+          Simple. Customizable. Stylish.
+        </h2>
+        <button className="p-4 bg-button px-9 rounded-md text-footerText mt-16 font-bold hover:bg-hovering duration-500">
           Get demo for free
         </button>
-        <h3 className="text-xl">WATCH FULL VIDEO</h3>
+        <h3 className="md:text-xl text-lg md:mt-40 mt-20 font-bold">
+          &#128308; WATCH FULL VIDEO
+        </h3>
       </div>
     </main>
   );
