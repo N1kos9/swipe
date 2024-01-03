@@ -17,7 +17,9 @@ export default function Home() {
 
   useEffect(() => {
     const changeWidth = () => {
-      setScreenWidth(window.innerWidth);
+      if (window !== undefined) {
+        setScreenWidth(window.innerWidth);
+      }
     };
     window.addEventListener("resize", changeWidth);
 
