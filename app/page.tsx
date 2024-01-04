@@ -35,9 +35,9 @@ export default function Home() {
     };
   }, []);
   return (
-    <main className=" w-full max-w-[1380px] mt-2 px-5 md:px-10 mx-auto overflow-x-hidden overflow-y-hidden">
+    <main className=" w-full max-w-[1380px] mt-2 px-5 md:px-10 mx-auto overflow-hidden">
       {/* <Navbar /> */}
-      <nav className="flex align-middle z-20 text-text font-semibold items-center justify-between overflow-x-hidden">
+      <nav className="flex align-middle z-20 text-text font-semibold items-center justify-between ">
         <div className="overflow-x-hidden overflow-y-hidden">
           <Image src="/logo.png" width={100} height={100} alt="logo" />
         </div>
@@ -69,26 +69,26 @@ export default function Home() {
             Buy now
           </button>
         </div>
-        <div className="absolute -z-20 h-full bottom-0 lg:right-56 right-[-300px] max-w-2xl max-h-2xl lg:max-w-full lg:max-h-full overflow-x-hidden">
-          <Image
-            src="/item.png"
-            alt="item"
-            height={800}
-            width={800}
-            className="overflow-x-hidden overflow-y-hidden"
-          />
-        </div>
+
         <div className="menu-icon flex navbar:hidden">
           <AiOutlineMenu
             onClick={toggleNav}
-            className=" text-6xl border rounded-md p-3 bg-buttonBackground border-background shadow-2xl"
+            className=" text-6xl border rounded-md p-3 bg-buttonBackground border-background shadow-2xl overflow-x-hidden overflow-y-hidden"
           />
         </div>
       </nav>
-
+      <div className="absolute -z-20 h-full bottom-0 lg:right-56 right-[-300px] max-w-2xl max-h-2xl lg:max-w-full lg:max-h-full">
+        <Image
+          src="/item.png"
+          alt="item"
+          height={800}
+          width={800}
+          className="overflow-x-hidden overflow-y-hidden overflow-hidden"
+        />
+      </div>
       <div className=" mt-28">
         <h1 className="md:text-7xl text-5xl text-balance font-bold md:tracking-wider md:leading-tight">
-          Accessible way to start your business
+          Accessible way to start your busines
         </h1>
         <h2 className="md:text-3xl text-2xl mt-11 font-bold text-text">
           Simple. Customizable. Stylish.
