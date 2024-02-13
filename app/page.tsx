@@ -66,7 +66,7 @@ export default function Home() {
 
         <div>
           <button className="md:p-4 hidden md:block md:bg-buttonBackground md:opacity-80 md:px-9 md:rounded-md md:border-2 md:border-background hover:bg-whiteHover duration-300 drop-shadow-2xl">
-            Buy now
+            Buy now.
           </button>
         </div>
 
