@@ -94,7 +94,7 @@ export default function Home() {
           Simple. Customizable. Stylish.
         </h2>
         <button className="p-4 bg-button px-9 rounded-md text-footerText mt-16 font-bold hover:bg-hovering duration-500">
-          Get demo for free
+          Get demo for free.
         </button>
         <div className="grid md:grid-cols-2 grid-cols-1 mt-20">
           <h3 className="md:text-xl text-lg font-bold md:mt-24 mt-12 cursor-pointer">
